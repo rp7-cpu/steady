@@ -1,4 +1,4 @@
-# steady-fetch
+﻿# steady-fetch
 
 **Production-ready HTTP fetch wrapper with retry, circuit breaker, cache, idempotency, key injection, and structured logging. One line, zero config.**
 
@@ -27,3 +27,11 @@
 
 ## License
 MIT
+
+
+## License
+- **Version 1.0.1** remains under the MIT License.
+- **Version 1.1.0 and later** are released under the GNU Affero General Public License v3 (AGPLv3). See [LICENSE-AGPL](./LICENSE-AGPL) for the full text.
+
+## Enterprise & Cloud
+The AGPL ensures that anyone using steady-fetch in a network context must share their source code. For organizations that cannot comply, a commercial license is available. Additionally, the upcoming **steady.cloud** service will provide distributed cache and centralized circuit breaking — features that are impossible to replicate locally and will be available exclusively to license holders.

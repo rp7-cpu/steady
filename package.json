@@ -2,7 +2,7 @@
     "name":  "steady-fetch",
     "version":  "1.0.1",
     "description":  "Production-ready HTTP fetch wrapper with retry, circuit breaker, cache, idempotency, key injection, and structured logging. One line, zero config.",
-    "license":  "MIT",
+    "license":  "AGPL-3.0",
     "type":  "module",
     "main":  "./dist/index.cjs",
     "module":  "./dist/index.js",
