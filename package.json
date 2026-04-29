@@ -1,19 +1,56 @@
-{
-  "name": "steady",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "type": "commonjs",
-  "devDependencies": {
-    "@types/node": "^25.6.0",
-    "tsup": "^8.5.1",
-    "typescript": "^6.0.3",
-    "vitest": "^4.1.5"
-  }
+﻿{
+    "name":  "steady-fetch",
+    "version":  "1.0.1",
+    "description":  "Production-ready HTTP fetch wrapper with retry, circuit breaker, cache, idempotency, key injection, and structured logging. One line, zero config.",
+    "license":  "MIT",
+    "type":  "module",
+    "main":  "./dist/index.cjs",
+    "module":  "./dist/index.js",
+    "types":  "./dist/index.d.ts",
+    "exports":  {
+                    ".":  {
+                              "require":  "./dist/index.cjs",
+                              "import":  "./dist/index.js",
+                              "types":  "./dist/index.d.ts"
+                          }
+                },
+    "files":  [
+                  "dist",
+                  "README.md",
+                  "LICENSE"
+              ],
+    "scripts":  {
+                    "build":  "tsup src/index.ts --format esm,cjs --dts --clean",
+                    "test":  "vitest run",
+                    "test:watch":  "vitest",
+                    "prepublishOnly":  "npm run build \u0026\u0026 npm test"
+                },
+    "keywords":  [
+                     "fetch",
+                     "retry",
+                     "circuit-breaker",
+                     "http-cache",
+                     "idempotency",
+                     "api-resilience",
+                     "fetch-wrapper",
+                     "nodejs",
+                     "typescript",
+                     "serverless",
+                     "edge-computing",
+                     "production-ready",
+                     "open-source",
+                     "npm",
+                     "javascript",
+                     "http",
+                     "resilience"
+                 ],
+    "engines":  {
+                    "node":  "\u003e=18"
+                },
+    "devDependencies":  {
+                            "tsup":  "^8.0.0",
+                            "typescript":  "^5.5.0",
+                            "vitest":  "^4.1.5",
+                            "@types/node":  "^20.0.0"
+                        }
 }

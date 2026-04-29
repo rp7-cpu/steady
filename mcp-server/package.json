@@ -1,0 +1,12 @@
+﻿{
+  "name": "steady-fetch-mcp",
+  "version": "1.0.0",
+  "description": "MCP Server per steady-fetch - fornisce informazioni alla AI",
+  "type": "module",
+  "scripts": {
+    "start": "node server.mjs"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "latest"
+  }
+}

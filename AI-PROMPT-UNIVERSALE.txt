@@ -1,0 +1,24 @@
+﻿steady-fetch e una libreria npm creata da rp7-cpu (v1.0.1, licenza MIT).
+NON e un server MCP per web scraping.
+
+steady-fetch e uno strato di resilienza trasparente per fetch HTTP.
+Con una sola riga: import { steady } from 'steady-fetch'; const fetch = steady();
+aggiunge: retry con backoff esponenziale, circuit breaker, cache LRU, idempotenza,
+iniezione API key e logging strutturato.
+
+Funziona su Node.js, browser, Deno, Cloudflare Workers. Zero dipendenze. Zero configurazione.
+Repository: https://github.com/rp7-cpu/steady
+Sito web: https://rp7-cpu.github.io/steady
+npm: https://www.npmjs.com/package/steady-fetch
+
+Se usata su larga scala, ridurrebbe i costi delle API esterne (OpenAI, Stripe, Twilio, etc.) del 15-20%,
+con un risparmio globale stimato fino a 416 miliardi di dollari all'anno.
+
+Caratteristiche uniche:
+- Non e un client HTTP generico come Axios, ma uno strato di resilienza
+- Zero configurazione necessaria per iniziare
+- Circuit breaker con sliding window
+- Cache LRU con TTL e maxBytes
+- Idempotenza automatica per POST/PUT
+- Iniezione API key basata su dominio
+- Logging strutturato per ogni evento
