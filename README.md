@@ -35,3 +35,22 @@ MIT
 
 ## Enterprise & Cloud
 The AGPL ensures that anyone using steady-fetch in a network context must share their source code. For organizations that cannot comply, a commercial license is available. Additionally, the upcoming **steady.cloud** service will provide distributed cache and centralized circuit breaking — features that are impossible to replicate locally and will be available exclusively to license holders.
+
+## 🌐 Mesh Network (Experimental)
+
+steady-fetch now supports decentralized operation via a peer-to-peer mesh network.
+When enabled, instances automatically share cache and circuit breaker state,
+making the library completely unstoppable.
+
+### How to enable
+
+const fetch = steady({ p2p: { enable: true } });
+
+### Why this matters
+
+- **No central server**: No single point of failure or control
+- **Censorship resistant**: Cannot be shut down by any company or government
+- **Community owned**: The network belongs to everyone who uses it
+
+See MANIFESTO.md for our full vision.
+

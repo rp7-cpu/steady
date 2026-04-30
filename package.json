@@ -1,6 +1,6 @@
 ﻿{
     "name":  "steady-fetch",
-    "version":  "1.0.1",
+    "version":  "1.0.2",
     "description":  "Production-ready HTTP fetch wrapper with retry, circuit breaker, cache, idempotency, key injection, and structured logging. One line, zero config.",
     "license":  "AGPL-3.0",
     "type":  "module",
